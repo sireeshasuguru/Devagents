@@ -1,0 +1,52 @@
+/*
+RetroGameHub 8-bit Theme Styles
+Features pixel-art aesthetics with CRT monitor effect
+*/
+body {
+    background-color: #1a1a1a;
+    color: #00ff00;
+    font-family: 'Press Start 2P', monospace;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 2px solid #ff00ff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+h1 {
+    color: #ff0000;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+.games-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.game {
+    border-bottom: 2px solid #00ffff;
+    padding-bottom: 15px;
+}
+.game:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+h2 {
+    color: #ffff00;
+    margin: 0 0 10px 0;
+    font-size: 1.3em;
+    text-shadow: 1px 1px #000000;
+}
+p {
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+    color: #00ff00;
+    margin: 0;
+    line-height: 1.8;
+}

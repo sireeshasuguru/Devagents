@@ -1,0 +1,17 @@
+*# Python cache files
+.pyc
+__pycache__/
+
+# macOS system file
+.DS_Store
+
+# IDE config folders
+.idea
+.vscode
+
+# Environment files
+.env
+*.env
+env/
+devagent_env/
+.devagent_env/

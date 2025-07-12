@@ -1,0 +1,28 @@
+<!--   
+HTML template for displaying arcade games with retro theme  
+-->  
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Retro Arcade Classics</title>  
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">  
+</head>  
+<body>  
+    <div class="crt">  
+        <h1>🕹️ Classic Arcade Games</h1>  
+        <div class="grid-container">  
+            {% for game in games %}  
+            <div class="game-card">  
+                <h2 class="pixel-text">{{ game.title }}</h2>  
+                <p class="year">📅 {{ game.year }}</p>  
+                <p class="developer">👾 {{ game.developer }}</p>  
+                <p class="description">{{ game.description }}</p>  
+            </div>  
+            {% endfor %}  
+        </div>  
+    </div>  
+</body>  
+</html>  
